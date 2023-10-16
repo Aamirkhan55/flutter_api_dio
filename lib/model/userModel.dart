@@ -16,8 +16,8 @@ class UserModel {
   @JsonValue("ast_name")
     String? last_name;
 
-  @JsonValue("avata")
-  String? avata;
+  @JsonValue("avatar")
+  String? avatar;
 
   UserModel();
 
