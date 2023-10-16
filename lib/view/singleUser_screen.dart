@@ -32,8 +32,16 @@ class _SingleUserScreenState extends State<SingleUserScreen> {
         'There is some error';
       }
     } on Exception catch (e) {
+      isLoading = false;
       e.toString();
     }
+  }
+
+  @override
+  void initState() {
+    getUser();
+    http = HttpServices();
+    super.initState();
   }
 
   @override
